@@ -7,7 +7,7 @@ export default function LandingPageLayout({
   children: ReactNode
 }) {
   return (
-    <div className="mx-auto grid min-h-screen w-full max-w-[1600px] grid-rows-[min-content_max-content] gap-5">
+    <div className="mx-auto grid min-h-screen w-full grid-rows-[min-content_max-content] gap-5">
       <Header />
       {children}
     </div>
