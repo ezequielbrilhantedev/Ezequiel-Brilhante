@@ -1,7 +1,8 @@
 import Image from 'next/image'
 
 import { Tooltip } from '@nextui-org/react'
-import { TypeAnimationWriter } from '@/app/components/type-animation-writer'
+import { TypeAnimationWriter } from '@/app/components/TypeAnimationWritter/type-animation-writer'
+import { ProjectsCard } from '@/app/components/ProjectsCard/projectsCard'
 
 export default function Home() {
   return (
@@ -103,26 +104,7 @@ export default function Home() {
 
       <div>
         <h1>Projetos</h1>
-        <div>
-          <div>
-            <Image
-              src="/devStore.png"
-              width={50}
-              height={47}
-              quality={100}
-              alt=""
-            />
-          </div>
-          <div>
-            <Image
-              src="/DTMoney.png"
-              width={50}
-              height={47}
-              quality={100}
-              alt=""
-            />
-          </div>
-        </div>
+        <ProjectsCard />
       </div>
     </div>
   )
