@@ -3,11 +3,12 @@ import Image from 'next/image'
 import { Tooltip } from '@nextui-org/react'
 import { TypeAnimationWriter } from '@/app/components/TypeAnimationWritter/type-animation-writer'
 import { ProjectsCard } from '@/app/components/ProjectsCard/projectsCard'
+import { Experience } from '@/app/components/Experience/experience'
 
 export default function Home() {
   return (
     <div className="px-40 py-20">
-      <div className="flex gap-12 justify-center">
+      <div className="flex gap-12 justify-center min-h-[50%] items-center">
         <div className="min-w-80">
           <Image
             src="/Ezequiel_Dev_Perfil.png"
@@ -50,7 +51,7 @@ export default function Home() {
       <div className="py-10">
         <div className="flex items-center flex-col gap-8">
           <h5 className="uppercase text-violet-400 font-extrabold text-xl">
-            Experiência com
+            Conhecimentos em
           </h5>
           <div className="flex gap-12 max-w-md">
             <Tooltip content="JavaScript" placement="bottom">
@@ -102,9 +103,22 @@ export default function Home() {
         </div>
       </div>
 
-      <div>
-        <h1>Projetos</h1>
+      <div className="flex flex-col items-center pt-20 gap-8">
+        <h1 className="uppercase text-violet-400 font-extrabold text-xl">
+          Projetos
+        </h1>
         <ProjectsCard />
+      </div>
+
+      <div className="pt-24">
+        <div className="flex justify-center">
+          <h1 className=" uppercase text-violet-400 font-extrabold text-xl">
+            Experiência Profissional
+          </h1>
+        </div>
+        <div className="px-52 py-5">
+          <Experience />
+        </div>
       </div>
     </div>
   )

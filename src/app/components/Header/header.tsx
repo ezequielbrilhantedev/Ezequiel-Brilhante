@@ -14,8 +14,12 @@ export default function Header() {
           Home
         </Link>
         <div></div>
-        <Link href="/" className="font-sans">
-          About
+        <Link
+          href="https://www.linkedin.com/in/ezequiel-brilhante/"
+          className="font-sans"
+          target="_blank"
+        >
+          LinkedIn
         </Link>
         <Link
           href="https://github.com/ezequielbrilhantedev"
