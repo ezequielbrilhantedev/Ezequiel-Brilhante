@@ -41,13 +41,13 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-center pb-10">
+      {/* <div className="flex justify-center pb-10">
         <div>
           <button className="border-2 border-s-white rounded-full w-44 h-16 text-xl hover:bg-violet-400 duration-200 font-bold">
             Download CV
           </button>
         </div>
-      </div>
+      </div> */}
 
       <div className="py-10">
         <div className="flex items-center flex-col gap-8">
