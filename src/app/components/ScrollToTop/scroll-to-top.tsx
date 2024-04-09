@@ -38,10 +38,9 @@ export function ScrollToTop() {
         <div>
           <button
             onClick={scrollToTop}
-            className="fixed bottom-0 right-0 bg-black rounded-s-full px-4 py-2 mr-6 mb-[71px] z-50 items-center text-xs flex gap-2"
+            className="fixed bottom-0 right-0 mr-10 mb-[71px] "
           >
-            <ArrowUp />
-            Voltar ao topo
+            <ArrowUp size={40} />
           </button>
         </div>
       )}

@@ -8,23 +8,29 @@ import { ScrollToTop } from '@/app/components/ScrollToTop/scroll-to-top'
 
 export default function Home() {
   return (
-    <div className="px-40 py-20">
-      <div className="flex gap-12 justify-center min-h-[34%] items-center">
-        <div className="min-w-80">
+    <div className="tablet:px-20 laptop:px-40 desktop:px-40 py-20">
+      <div
+        className="grid laptop:flex desktop:flex
+       gap-12 justify-center min-h-[34%] items-center"
+      >
+        <div className="min-w-80 mobile:flex mobile:justify-center">
           <Image
             src="/Ezequiel_Dev_Perfil.png"
             width={400}
             height={400}
             quality={100}
             alt=""
-            style={{ borderRadius: '100%' }}
+            className="rounded-full mobile:w-72"
           />
         </div>
-        <div className="flex flex-col justify-end">
-          <p className="text-4xl font-bold ">
-            <span className="text-5xl">Olá,</span> <br />
+        <div className="flex flex-col justify-end mobile:px-5">
+          <p className="text-4xl font-bold mobile:text-xl">
+            <span className="text-5xl mobile:text-3xl">Olá,</span> <br />
             meu nome é{' '}
-            <span className="text-violet-400">Ezequiel Brilhante</span> e <br />
+            <span className="text-violet-400 mobile:text-xl">
+              Ezequiel Brilhante
+            </span>{' '}
+            e <br />
             sou <TypeAnimationWriter />
             <br />
           </p>
@@ -117,7 +123,7 @@ export default function Home() {
             Experiência Profissional
           </h1>
         </div>
-        <div className="px-52 py-5">
+        <div className="w-[100%] px-[10%] py-5">
           <Experience />
         </div>
       </div>

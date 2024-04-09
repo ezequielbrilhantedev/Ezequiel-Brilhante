@@ -6,7 +6,20 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  theme: {},
+  theme: {
+    screens: {
+      mobile: { max: '720px' },
+      tablet: { min: '640px', max: '1024px' },
+      // => @media (min-width: 640px) { ... }
+
+      laptop: { min: '1024px', max: '1280px' },
+      // => @media (min-width: 1024px) { ... }
+
+      desktop: '1280px',
+      // => @media (min-width: 1280px) { ... }
+    },
+  },
   plugins: [],
 }
+
 export default config
