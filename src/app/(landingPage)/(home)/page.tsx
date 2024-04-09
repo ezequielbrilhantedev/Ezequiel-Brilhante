@@ -4,11 +4,12 @@ import { Tooltip } from '@nextui-org/react'
 import { TypeAnimationWriter } from '@/app/components/TypeAnimationWritter/type-animation-writer'
 import { ProjectsCard } from '@/app/components/ProjectsCard/projectsCard'
 import { Experience } from '@/app/components/Experience/experience'
+import { ScrollToTop } from '@/app/components/ScrollToTop/scroll-to-top'
 
 export default function Home() {
   return (
     <div className="px-40 py-20">
-      <div className="flex gap-12 justify-center min-h-[50%] items-center">
+      <div className="flex gap-12 justify-center min-h-[34%] items-center">
         <div className="min-w-80">
           <Image
             src="/Ezequiel_Dev_Perfil.png"
@@ -120,6 +121,10 @@ export default function Home() {
           <Experience />
         </div>
       </div>
+
+      <footer className="h-52">
+        <ScrollToTop />
+      </footer>
     </div>
   )
 }
