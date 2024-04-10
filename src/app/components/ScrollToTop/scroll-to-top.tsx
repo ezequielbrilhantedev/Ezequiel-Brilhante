@@ -38,7 +38,7 @@ export function ScrollToTop() {
         <div>
           <button
             onClick={scrollToTop}
-            className="fixed bottom-0 right-0 mr-10 mb-[71px] "
+            className="fixed bottom-0 right-0 mr-10 tablet:mb-[71px] mobile:mb-4"
           >
             <ArrowUp size={40} />
           </button>

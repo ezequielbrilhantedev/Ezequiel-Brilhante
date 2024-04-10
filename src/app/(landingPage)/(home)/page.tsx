@@ -24,7 +24,7 @@ export default function Home() {
           />
         </div>
         <div className="flex flex-col justify-end mobile:px-5">
-          <p className="text-4xl font-bold mobile:text-xl">
+          <p className="text-4xl font-bold mobile:text-xl mobile:text-center">
             <span className="text-5xl mobile:text-3xl">Olá,</span> <br />
             meu nome é{' '}
             <span className="text-violet-400 mobile:text-xl">
@@ -35,7 +35,7 @@ export default function Home() {
             <br />
           </p>
 
-          <p className="py-10 text-2xl max-w-3xl">
+          <p className="py-10 mobile:text-xl mobile:text-center text-2xl max-w-3xl">
             Ao longo da minha carreira, tive a oportunidade de trabalhar em
             diversos projetos de sucesso. Além de frontend com ReactJs, também
             possuo experiência em desenvolvimento FullStack com as stacks
@@ -60,7 +60,7 @@ export default function Home() {
           <h5 className="uppercase text-violet-400 font-extrabold text-xl">
             Conhecimentos em
           </h5>
-          <div className="flex gap-12 max-w-md">
+          <div className="flex mobile:gap-4 gap-12 mobile:max-w-80 max-w-md">
             <Tooltip content="JavaScript" placement="bottom">
               <Image
                 src="/javascript.png"
@@ -128,9 +128,7 @@ export default function Home() {
         </div>
       </div>
 
-      <footer className="h-52">
-        <ScrollToTop />
-      </footer>
+      <ScrollToTop />
     </div>
   )
 }

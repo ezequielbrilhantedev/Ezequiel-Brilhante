@@ -9,10 +9,10 @@ const config: Config = {
   theme: {
     screens: {
       mobile: { max: '720px' },
-      tablet: { min: '640px', max: '1024px' },
+      tablet: { min: '720px' },
       // => @media (min-width: 640px) { ... }
 
-      laptop: { min: '1024px', max: '1280px' },
+      laptop: { min: '1024px' },
       // => @media (min-width: 1024px) { ... }
 
       desktop: '1280px',

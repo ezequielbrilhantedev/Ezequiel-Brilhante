@@ -4,7 +4,7 @@ import Link from 'next/link'
 export function ProjectsCard() {
   return (
     <>
-      <div className="flex gap-5">
+      <div className="mobile:grid mobile:px-5 flex gap-5">
         <div>
           <Link
             href="https://github.com/ezequielbrilhantedev/devstore"
