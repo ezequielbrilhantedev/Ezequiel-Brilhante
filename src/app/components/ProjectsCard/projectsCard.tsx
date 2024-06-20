@@ -1,7 +1,25 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from 'next/image';
+import Link from 'next/link';
 
-export function ProjectsCard() {
+async function getAllProjects() {
+  const response = await fetch(
+    'https://api.vercel.com/v9/projects',
+    {
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer Jb5f8GS2d4WzmAi0irQIsk6J`,
+      },
+    }
+  );
+  if (!response.ok) {
+    throw new Error('Failed to fetch data');
+  }
+  return response.json();
+}
+
+export async function ProjectsCard() {
+  const projects = await getAllProjects();
+  console.log(projects);
   return (
     <>
       <div className="mobile:grid mobile:px-5 flex gap-5">
@@ -47,5 +65,8 @@ export function ProjectsCard() {
         </h1>
       </Link>
     </>
-  )
+  );
+}
+function api(arg0: string) {
+  throw new Error('Function not implemented.');
 }
